@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='css/style.css') }}">
+    <script
+        src="{{ url_for('static', filename='js/app.js') }}"
+        type="module"
+    ></script>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="#">Krittin.Ch</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+            <li><a href="/admin">Admin</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="bbox">
+            <h1>Hello, This is my first page</h1>
+            <img src="https://picsum.photos/700/500" alt="">
+        </div> 
+    </section>
+
+    <section id="about">
+        <div class="bbox">
+            <h1>Hello, This is my second page</h1>
+            <img src="https://picsum.photos/700/500" alt="">
+        </div> 
+    </section>
+    
+</body>
+</html>
